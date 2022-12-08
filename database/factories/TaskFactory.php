@@ -17,7 +17,7 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            'title' => fake()->colorName()
+            'title' => fake()->colorName(),
             'description' => fake()->realText(500),
         ];
     }

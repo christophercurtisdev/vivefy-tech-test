@@ -16,7 +16,9 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Lane/index');
+        return Inertia::render('Task/index',[
+            'tasks' => Task::where(['owner_id' => \Auth::user()->id])
+        ]);
     }
 
     /**

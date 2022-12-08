@@ -19,8 +19,8 @@ class TaskSeeder extends Seeder
     public function run()
     {
         Task::factory(200)->create([
-            'lane_id' => rand(Lane::count()),
-            'owner_id' => rand(User::count())
-        ])
+            'lane_id' => rand(1,Lane::count()),
+            'owner_id' => rand(1,User::count())
+        ]);
     }
 }
