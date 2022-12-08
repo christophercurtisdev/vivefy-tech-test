@@ -26,10 +26,12 @@ import { Head } from '@inertiajs/inertia-vue3';
                             The application itself is similar to a trello board without the pretty frontend.
                             I've also fleshed out models with relationships that aren't used and generated dummy data in the seeders
                             in the app just to demonstrate the shape of the data.
+                            Lastly, most of the functionality is not in but the idea is one page for boards (CRUD functionality) where you define the lanes in the create/ update, another page for viewing boards (where you also create tasks in a modal), and finally one page for task viewing/ updating.
+                            The missing functionality is mostly just forms that would call an ajax/ axios function in the component and ping the data to the correct endpoint.
                         </p>
                         <br>
                         <p class="text-md">
-                            Application Features:
+                            Application Desired Features:
                         </p>
                         <ul class="list-disc pl-12">
                             <li>CRUD functionality for boards</li>
